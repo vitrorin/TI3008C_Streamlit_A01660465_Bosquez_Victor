@@ -145,9 +145,9 @@ with tab_resumen:
 
     grafica_1, grafica_2 = st.columns(2)
     with grafica_1:
-        st.plotly_chart(fig_linea, width="stretch")
+        st.plotly_chart(fig_linea)
     with grafica_2:
-        st.plotly_chart(fig_barras, width="stretch")
+        st.plotly_chart(fig_barras)
 
     area_lider = resumen_area.iloc[0]
     area_lenta = resumen_area.sort_values("Tiempo_promedio", ascending=False).iloc[0]
